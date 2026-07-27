@@ -1,0 +1,5 @@
+scripts/yt-insight
+.DS_Store
+*.swp
+*.swo
+/tmp/
