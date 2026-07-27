@@ -1,5 +1,5 @@
 ---
-name: youtube-insight
+name: ytsift
 description: Transcribe a YouTube video from a URL, understand what it is about, and analyze public opinion from its comments. Use whenever the user shares a YouTube link and asks for a summary, what the video is about, a transcript, the comment sentiment, the audience reaction, or a public-opinion analysis. Triggers on phrases like "о чем это видео", "проанализируй видео", "что говорят в комментариях", "summarize this youtube video", "what do people think about this video", "youtube транскрипт", "общественное мнение".
 user-invocable: true
 ---

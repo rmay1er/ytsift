@@ -1,6 +1,6 @@
-# YouTube Insight
+# ytsift
 
-> **CLI for AI agents** — fetch a YouTube video's transcript, comments and metadata in one shot, no API keys required.
+> **Sift through YouTube noise** — a Go CLI that extracts a video's transcript, comments and metadata, ready for AI analysis. No API keys.
 
 [![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?logo=go)](https://go.dev)
 [![yt-dlp](https://img.shields.io/badge/yt--dlp-required-orange)](https://github.com/yt-dlp/yt-dlp)
@@ -22,12 +22,12 @@ No API keys. One external dependency (`yt-dlp`). Clean output designed for token
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/youtube-insight.git
-cd youtube-insight
+git clone https://github.com/rmay1er/ytsift.git
+cd ytsift
 bash scripts/install.sh
 
 # or just grab the binary directly:
-# curl -Lo scripts/yt-insight https://github.com/YOUR_USERNAME/youtube-insight/releases/latest/download/yt-insight
+# curl -Lo scripts/yt-insight https://github.com/rmay1er/ytsift/releases/latest/download/yt-insight-darwin-arm64
 
 yt-insight fetch "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
@@ -162,7 +162,7 @@ This repository doubles as an **AI agent skill** for Crush, Claude Code, Cursor,
 **Crush:** If the repo is cloned (or symlinked) into one of Crush's default skill directories, it's auto-discovered:
 
 ```bash
-ln -s "$PWD" ~/.config/crush/skills/youtube-insight
+ln -s "$PWD" ~/.config/crush/skills/ytsift
 ```
 
 **Claude Code / Cursor:** Same approach — place the directory in your skills path or reference it in your project's `CLAUDE.md` / `AGENTS.md`.
@@ -237,7 +237,7 @@ The skill activates on prompts like:
 ## Project Structure
 
 ```
-youtube-insight/
+ytsift/
 ├── README.md              # this file
 ├── SKILL.md               # AI agent skill description
 ├── .gitignore
